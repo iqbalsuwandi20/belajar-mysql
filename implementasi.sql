@@ -41,3 +41,8 @@ create table order_details
 ) engine InnoDB;
 
 desc order_details;
+
+alter table orders
+    add column created_at timestamp not null;
+
+desc orders;
